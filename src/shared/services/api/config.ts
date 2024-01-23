@@ -1,8 +1,8 @@
 import axios from 'axios';
-import URL from '../../consts';
-import { getAuthToken } from '../../utils';
+import { getAuthToken } from '@auth';
+import { URL } from '@shared/consts';
 
-const apiConfig = axios.create({
+export const apiConfig = axios.create({
 	baseURL: URL,
 });
 
@@ -21,5 +21,3 @@ apiConfig.interceptors.request.use(
 	},
 	(error) => Promise.reject(error)
 );
-
-export default apiConfig;

@@ -1,1 +1,1 @@
-export { getAuthToken, setAuthToken } from './auth';
+export { handleError } from './errorHandling';

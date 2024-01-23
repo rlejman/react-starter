@@ -1,3 +1,1 @@
-const URL = 'example';
-
-export default URL;
+export const URL = 'example';

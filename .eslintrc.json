@@ -33,6 +33,7 @@
 		"linebreak-style": ["error", "unix"],
 		"semi": ["error", "always"],
 		"react/react-in-jsx-scope": "off",
+		"import/prefer-default-export": "off",
 		"no-use-before-define": "off",
 		"@typescript-eslint/no-use-before-define": ["error"],
 		"react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
@@ -58,6 +59,13 @@
 		"react-hooks/exhaustive-deps": "warn",
 		"react/no-array-index-key": "warn",
 		"no-empty-function": "error",
-		"react/jsx-props-no-spreading": "off"
+		"react/jsx-props-no-spreading": "off",
+		"no-param-reassign": [
+			"error",
+			{
+				"props": true,
+				"ignorePropertyModificationsFor": ["state"] // Ignoruje modyfikacje 'state' w Redux Toolkit
+			}
+		]
 	}
 }
