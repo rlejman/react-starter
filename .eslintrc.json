@@ -5,7 +5,7 @@
 	},
 	"settings": {
 		"react": {
-			"version": "detect" // ! SPR
+			"version": "detect"
 		},
 		"import/resolver": {
 			"typescript": {}
