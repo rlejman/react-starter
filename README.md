@@ -1,4 +1,4 @@
-# React TypeScript Starter Project README
+# React TypeScript Starter
 
 ## Table of Contents
 1. [Introduction](#introduction)
