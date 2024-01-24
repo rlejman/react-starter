@@ -1,5 +1,5 @@
 import { AxiosRequestConfig } from 'axios';
-import apiConfig from './config';
+import { apiConfig } from './config';
 
 export const get = async <Result>(
 	url: string,

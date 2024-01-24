@@ -1,3 +1,1 @@
-import URL from './app';
-
-export default URL;
+export { URL } from './app';
