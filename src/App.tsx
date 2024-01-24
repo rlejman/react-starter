@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.scss';
-import { actions, effects } from '@auth';
-import { AppDispatch, StoreRootType } from '@store';
+import { actions } from 'src/auth';
+import { AppDispatch, StoreRootType } from 'src/store';
 import logo from './logo.svg';
 
 function App(): JSX.Element {
@@ -10,7 +10,7 @@ function App(): JSX.Element {
 	);
 	const dispatch = useDispatch<AppDispatch>();
 	const login = (): void => {
-		dispatch(effects.loginThunk({ username: 'TEST', password: 'password' }));
+		dispatch(actions.login());
 	};
 	const logout = (): void => {
 		dispatch(actions.logout());
@@ -19,8 +19,7 @@ function App(): JSX.Element {
 	return (
 		<div className="App">
 			<header className="App-header">
-				is logged in? - {isLogedIn ? 'yes' : 'no'}
-				<img src={logo} className="App-logo" alt="logo" />
+				{isLogedIn ? <img src={logo} className="App-logo" alt="logo" /> : null}
 				<p>
 					Edit <code>src/App.tsx</code> and save to reload.
 				</p>

@@ -1,4 +1,4 @@
-import { AuthState } from '@auth';
+import { AuthState } from 'src/auth';
 
 export enum Store {
 	AUTH = 'auth',

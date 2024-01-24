@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { getAuthToken } from '@auth';
-import { URL } from '@shared/consts';
+import { getAuthToken } from 'src/auth';
+import { URL } from 'src/shared/consts';
 
 export const apiConfig = axios.create({
 	baseURL: URL,

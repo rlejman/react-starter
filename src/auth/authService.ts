@@ -1,4 +1,4 @@
-import { handleError, post } from '@shared';
+import { handleError, post } from 'src/shared';
 import { LoginCredentials } from './types';
 
 const PATH = '/api/login';
